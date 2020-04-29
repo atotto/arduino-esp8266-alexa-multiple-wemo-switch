@@ -2,7 +2,8 @@
 #define CALLBACKFUNCTION_H
  
 #include <Arduino.h>
+#include <functional>
 
-typedef bool (*CallbackFunction) ();
+typedef std::function<bool()> CallbackFunction;
 
 #endif
